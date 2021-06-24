@@ -1,0 +1,23 @@
+<iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@AyushTripathi3/iFrameTesting?lite=true."></iframe>
+
+
+function create() {
+  var iframe = document.createElement('iframe');
+  var html = '<iframe src="https://replit.com/@AyushTripathi3/iFrameTesting?lite=true" onload="javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));" style="height:200px;width:100%;border:none;overflow:hidden;"></iframe>';
+
+  var embed = document.getElementById("iFrame")
+  iframe.src = 'data:text/html;charset=utf-8,' + encodeURI(html);
+  embed.appendChild(iframe);
+
+  document.getElementById("iFrame").height = "500";
+}
+
+
+
+<div id="Exercise">
+
+  <button onclick="create()">Display Problem</button>
+  <div id="iFrame">
+    <script src="scripts/embeds.js"></script>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<!--This is a seperate page to create and store the coding exercises-->
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+  <script type="text/javascript" src="scripts/validation.js"></script>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title> MasterIt Coding Playground </title>
+  <meta name="coding exercises" content="MasterIt">
+
+</head>
+
+<body>
+
+  <div class="page-container">
+    <div class="header" style="text-align:center">
+      <h1>MasterIt Coding Exercises</h1>
+    </div>
+
+    <!-- This is for the problem description for the user -->
+    <div class="description">
+      <p> Welcome to MasterIt. This is the coding exercises page, where you can work through interactive replit displays and record your progress. The embed will contain the IDE and prompt you need to write code. Make sure to read the directions
+        carefully, and write the code under the function. One you have finished running the cases, hit the <b>SUBMIT</b> button. Have Fun!</p>
+      <p>Remember to <b>RETURN</b> a value from the function and <b>RUN TESTS</b></p>
+    </div>
+
+    <!-- This is where we embed the exercise code -->
+    <div id="Exercise">
+      <iframe id="problemFrame" class="problem" frameborder=0 width="97%" height="600px" src="https://i.pinimg.com/originals/90/80/60/9080607321ab98fa3e70dd24b2513a20.gif"></iframe>
+
+      <!-- Javascript Embed Script -->
+      <script language="JavaScript" src="scripts/embeds.js"></script>
+
+    </div>
+  </div>
+
+  <!--This is for a description + line break under the exercise embed -->
+  <div class="description">
+    <p> If you got all of the test cases correct, you may move on to the rest of the node activities.</p>
+  </div>
+
+  <button id="submit" class="myButton" onclick="test()">SUBMIT</button>
+
+  <br></br><br></br><br></br>
+
+
+</body>
+
+</html>
